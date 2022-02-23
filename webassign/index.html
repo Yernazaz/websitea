@@ -9,46 +9,41 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!--это для бутстрапа-->
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <!--это для иконок-->
-	<link rel="stylesheet" href="styla.css">
+	<link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Shop</title>
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-	<div class="container-fluid">
-		<a href="#"><img class = "logo" src="img/logo.jpg"></a>
-		<style>
-			.logo{
-   				width: 70px;
-    			height: 60px;
-    			border-radius: 50%;
-    			cursor: pointer;	
-				}
-		</style>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span><!--font awesome впервые испольвазли здесь-->
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a href="#" class="nav-link">Home</a>
-				</li>
-				<li class="nav-item active">
-					<a href="#" class="nav-link">About</a>
-				</li>
-				<li class="nav-item active">
-					<a href="#" class="nav-link">Services</a>
-				</li>
-				<li class="nav-item active">
-					<a href="#" class="nav-link">Team</a>
-				</li>
-				<li class="nav-item active">
-					<a href="register.html" class="nav-link">Register</a>
-				</li>
-			</ul>
-		</div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+	<b class="navbar-brand" href="#"><b style="color: darkgreen;">T</b>itle</b>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="main.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item ">
+				<a class="nav-link" href="main.html#screen3">Blog <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item ">
+				<a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="register.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Account
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="#">Login</a>
+					<a class="dropdown-item" href="#">Registration</a>
+				</div>
+			</li>
+		</ul>
+
 	</div>
 </nav>
 <!-- Gallery -->
