@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <!--это сслыка на бутстарп-->
+	<link rel="icon" type="image/x-icon" href="https://images.pexels.com/photos/159220/printed-circuit-board-print-plate-via-macro-159220.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"> <!--favicon-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!--это для бутстрапа-->
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <!--это для иконок-->
+	<link rel="stylesheet" href="styla.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Shop</title>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a href="#"><img class = "logo" src="img/logo.jpg"></a>
+		<style>
+			.logo{
+   				width: 70px;
+    			height: 60px;
+    			border-radius: 50%;
+    			cursor: pointer;	
+				}
+		</style>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span><!--font awesome впервые испольвазли здесь-->
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link">About</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Services</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Team</a>
+				</li>
+				<li class="nav-item active">
+					<a href="register.html" class="nav-link">Register</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- Gallery -->
+<section class="wrapper-gallery" id="index-gallery">
+	<p>Gallery of our products</p>
+	<h2>Find anything you need</h2>
+	<!--block for each image-->
+	<div class="gallery-img img1">
+		<!--block for hover-->
+		<div><a href="#">This is title</a></div>
+	</div>
+	<!--block for each image-->
+	<div class="gallery-img img2">
+		<!--block for hover-->
+		<div><a href="#">This is title</a></div>
+	</div>
+	<!--block for each image-->
+	<div class="gallery-img img3">
+		<!--block for hover-->
+		<div><a href="#">This is title</a></div>
+	</div>
+	<!--block for each image-->
+	<div class="gallery-img img4">
+		<!--block for hover-->
+		<div><a href="#">This is title</a></div>
+	</div>
+	<!--block for each image-->
+	<div class="gallery-img img5">
+		<!--block for hover-->
+		<div><a href="#">This is title</a></div>
+	</div>
+	<!--block for each image-->
+	<div class="gallery-img img6">
+		<!--block for hover-->
+		<div><a href="#">This is title</a></div>
+	</div>
+	<!--block for each image-->
+	<div class="gallery-img img7">
+		<!--block for hover-->
+		<div><a href="#">This is title</a></div>
+	</div>
+</section>
+
+<!--- Jumbotron -->
+<div class="jumbotron">
+	<h1 class="display-4" style="text-align: center; font-size: 40px;">Get Our Products!</h1>
+	<p class="lead" style="text-align: center;">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+	<hr class="my-4">
+	<p style="text-align: center;">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+	<p class="lead">
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" class="btn btn-primary btn-large" style="width: 100%;">Learn more</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="container-fluid padding">
+		<div class="row padding">
+			<div class="col-lg-6">
+				<h2><b style="color: blueviolet;">Our Program</b></h2>
+				<p style="font-size: large;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium nihil blanditiis dolores nulla alias expedita numquam aliquam sit perspiciatis.</p>
+
+				<p style="font-size: large;"><b>A plan:</b></p>
+
+				<p style="font-size: large;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum magnam odio non. Voluptatibus praesentium velit voluptas! Sunt expedita voluptatibus aut sapiente consequatur possimus, nam libero. Unde hic est incidunt assumenda?</p>
+				<br>
+			</div>
+			<div class="col-lg-6">
+				<img src="img/modal.jpg" style="height: 800px; width: 700px;" class="img-fluid">
+			</div>
+		</div>
+	</div>
+  </div>
+
+</div>
+	</p>
+  </div>
+<!--cards-->
+<div class="container">
+    <div class="card">
+       <div class="img">
+          <img src="img/men.jpg">
+       </div>
+       <div class="top-text">
+          <div class="name">
+             Product 1
+          </div>
+          <p>
+             For An Apps Developer
+          </p>
+       </div>
+       <div class="bottom-text">
+          <div class="text">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quaerat iusto adipisci reprehenderit quasi cum perspiciatis, minima reiciendis magni quam!
+          </div>
+          <div class="btn">
+             <a href="#">Read more</a>
+          </div>
+       </div>
+    </div>
+    <div class="card">
+       <div class="img">
+          <img src="img/women.jpg">
+       </div>
+       <div class="top-text">
+          <div class="name">
+             Product 2
+          </div>
+          <p>
+             For A Website Developer
+          </p>
+       </div>
+       <div class="bottom-text">
+          <div class="text">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quaerat iusto adipisci reprehenderit quasi cum perspiciatis, minima reiciendis magni quam!
+          </div>
+          <div class="btn">
+             <a href="#">Read more</a>
+          </div>
+       </div>
+    </div>
+    <div class="card">
+       <div class="img">
+          <img src="img/tech.jpg">
+       </div>
+       <div class="top-text">
+          <div class="name">
+             Product 3
+          </div>
+          <p>
+             For A Game Developer
+          </p>
+       </div>
+       <div class="bottom-text">
+          <div class="text">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quaerat iusto adipisci reprehenderit quasi cum perspiciatis, minima reiciendis magni quam!
+          </div>
+          <div class="btn">
+             <a href="#">Read more</a>
+          </div>
+       </div>
+    </div>
+ </div>
+<!--get our product-->
+<div class="d-flex justify-content-center container mt-5">
+    <div class="cardi p-3 bg-white">
+        <div class="about-product text-center mt-2"><img src="https://i.imgur.com/3VTaSeb.png" width="300">
+            <div>
+                <h4 class="mt-0 text-black-50">Apple pro</h4>
+            </div>
+        </div>
+        <div class="stats mt-2">
+            <div class="d-flex justify-content-between p-price"><span>Pro Display XDR</span><span>$5,999</span></div>
+            <div class="d-flex justify-content-between p-price"><span>Pro stand</span><span>$999</span></div>
+            <div class="d-flex justify-content-between p-price"><span>Adapter</span><span>$199</span></div>
+        </div>
+        <div class="d-flex justify-content-between total font-weight-bold mt-4"><div class="btn-primary" style="width: 100%; text-align: center;">GET!</div></div>
+    </div>
+</div>
+ <!--- Footer -->
+<footer class="bg-light text-center text-white">
+	<div class="container p-4 pb-0">
+	</div>
+	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		&copy; 2022 Copyright:
+	  <a class="text-white" href="#">Name & Name</a>
+	</div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

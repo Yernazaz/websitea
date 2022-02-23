@@ -1,0 +1,472 @@
+/*
+Tutorial Name: Scroll To Top Then Fixed Navigation Effect With JQuery and CSS
+https://stanhub.com/scroll-to-top-then-fixed-navigation-effect-with-jquery-and-css-free-download/
+Description: Create a sticky navigation bar that remains fixed to the top after scroll
+Author: Stan Kostadinov
+Author URI: https://stanhub.com
+Version: 1.0.0 - 11.01.2014
+
+
+* {margin: 0; padding: 0;}
+
+a {text-decoration: none;}
+
+/* This class is added on scroll
+.fixed {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    z-index: 1;
+}
+
+body {
+    color: #fff;
+    font-family: 'open-sans-bold', AvenirNext-Medium, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+section {
+    height: 100vh;
+}
+*/
+#screen1 {
+
+  display: flex;
+  justify-content: center;
+
+  height: 100vh;
+
+  background: #43b29d;
+  
+background-image: url('image1.jpg');
+opacity:0.84;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#screen1 p {
+    padding-top: 200px;
+}
+/*
+#screen2 {
+    background: white;
+}
+#screen2 h1{
+
+   color: #474544;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 4%;
+}
+#screen2 p{
+  height: 200px;
+  width: 500px;
+  color: black;
+ position: relative;
+  
+  left: 35%;
+
+  top: 50%;
+}
+#screen2 button{
+    margin:5%;
+  margin-left:45%;
+  margin-right:25%;
+
+  position: relative;
+  top: 40%;
+  left: 10%;
+}
+#screen2 img{
+  position: relative;
+  left:6%;
+  bottom: 15%;
+  right: 10%;
+}
+
+#screen3 {
+   height: 150vh;
+    background: #F0FFF0;
+}
+#screen3 p{
+  color: black;
+position: relative;
+top: 15px;
+}
+#screen3 h1{
+  
+   color: black;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5%;
+  position: relative;
+  top: 5%;
+}
+#screen3 h5{
+  
+   color: black;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5%;
+  position: relative;
+  top: 5%;
+}
+#screen3 img{
+  position: relative;
+  right:  50px;
+}
+#screen4 {
+ 
+}
+#screen4 h1{
+
+   color: #474544;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 4%;
+}
+#screen4 p{
+  color: black;
+position: relative;
+top: 35px;
+left: 10%;
+}
+#screen4 button{
+    margin:5%;
+  margin-left:45%;
+  margin-right:25%;
+
+  position: relative;
+  top: 20%;
+}
+#screen4 img{
+  position: absolute;
+  left:60%;
+  top: 400%;
+}
+
+#screen5 {
+height: 59vh;
+}
+
+@media only screen and (max-width: 520px) {
+
+    nav li {
+        padding: 24px 4px;
+    }
+
+    nav li a {
+        font-size: 14px;
+    }
+
+}
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration
+}
+
+/* Clear floats after the columns
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration
+}
+
+/* Clear floats after the columns
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*/
+.typing.animate {
+  
+  width: 21ch;
+  height: 6vh;
+  border-right: 0.1em solid black;
+
+  font-family: monospace;
+  color: black;
+  font-size: 2em;
+animation: type 2.5s steps(25), writer 1s infinite alternate, delete 0.5s steps(5) 2.5s, type2 1s steps(4) 3s forwards, type3 2s steps(22, end) 6s forwards;  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.typing.animate::before { 
+  content: "Hello, We are Ainalay";
+  animation: type2 1s steps(4) 3s forwards, type3 3s steps(22, end) 6s forwards;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 21ch;
+  }
+}
+
+@keyframes type2 {
+  from {
+    width: 16ch;
+    content: "Hello, We are Ainalay. "
+  }
+  to {
+    width: 20ch;
+    content: "Hello, We are Ainalay. "
+  }
+}
+
+@keyframes type3 {
+  from {
+    width: 20ch;
+    content: "Hello, We are Ainalab. Welcome!"
+  }
+  to {
+    width: 42ch;
+    content: "Hello, We are Ainalab. Welcome!"
+  }
+}
+
+@keyframes writer {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes delete {
+  from {
+    width: 21ch;
+  }
+  to {
+    width: 16ch;
+  }
+}
+
+
+/*
+.custom-btn {
+  width: 150px;
+  height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+
+}
+
+.btn-4 {
+  background-color: #4dccc6;
+background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-4:hover{
+  background-color: #89d8d3;
+background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+}
+.btn-4 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-4:before,
+.btn-4:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.btn-4:before {
+  height: 0%;
+  width: .1px;
+}
+.btn-4:after {
+  width: 0%;
+  height: .1px;
+}
+.btn-4:hover:before {
+  height: 100%;
+}
+.btn-4:hover:after {
+  width: 100%;
+}
+.btn-4 span:before,
+.btn-4 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.btn-4 span:before {
+  width: .1px;
+  height: 0%;
+}
+.btn-4 span:after {
+  width: 0%;
+  height: .1px;
+}
+.btn-4 span:hover:before {
+  height: 100%;
+}
+.btn-4 span:hover:after {
+  width: 100%;
+}
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#000;
+  color:lightgrey;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
